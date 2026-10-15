@@ -15,11 +15,10 @@ namespace Assignment
         private int Factorial(int n)
         {
             // base case
-            if (n <= 1) return 1;
+            if (n <= 1)
+                return 1;
             // recursive case
-            // 3 Factorial(3 - 1)
-            // 2 Factorial(2 - 1)
-            // 1 Factorial(1 - 1)
+
             return n * Factorial(n - 1);
         }
 
@@ -31,11 +30,11 @@ namespace Assignment
         private int Fibonacci(int n)
         {
             // base case
-            if (n <= 1) return n;
+            if (n <= 1)
+                return n;
+
             // recursive case
-            // 5 Fibonacci(4) + Fibonacci(3)
-            // 3 Fibonacci(2) + Fibonacci(1)
-            // 1 Fibonacci(1) + Fibonacci(0)
+
             return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
 
@@ -47,15 +46,11 @@ namespace Assignment
         private int SumOfOneToN(int n)
         {
             // base case
-            if (n<= 0) return 0;
-            {
-                // recursive case
-                // 3 SumOfOneToN(2)
-                // 2 SumOfOneToN(1)
-                // 1 SumOfOneToN(0)
-                return n + SumOfOneToN(n - 1);
-            }
-            
+            if (n <= 0)
+                return 0;
+            // recursive case
+
+            return n + SumOfOneToN(n - 1);
         }
 
         public int LCT04_RecursiveSumOfNumbers(int[] numbers)
